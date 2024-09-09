@@ -12,6 +12,3 @@ client.on(`ready`, async () => {
         console.error(colors.red(`[ERROR]`), error);
     }
 })
-// 
-// تعالا بقا
-// SlashCommands.js Path
