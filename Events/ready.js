@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 client.on(`ready`, async () => {
     try {
         client.user.setStatus(`dnd`)
-        client.user.setActivity(`Azure Team`, { type: `PLAYING` });
+        client.user.setActivity(`Azure Team`);
         console.log(colors.green(`[READY]`), colors.blue(`${client.user.tag}`), colors.green(`is ready`))
 
     } catch (error) {
