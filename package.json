@@ -1,5 +1,9 @@
 {
-  "test": "echo \"Error: no test specified\" && exit 1",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
   "dependencies": {
     "ascii-table": "^0.0.9",
     "colors": "^1.4.0",
