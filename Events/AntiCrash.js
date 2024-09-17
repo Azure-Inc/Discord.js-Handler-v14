@@ -3,6 +3,7 @@ const url = process.env.WEBHOOK_URL;
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 if (!url) throw new Error(`[AntiCrash] Missing WEBHOOK_URL in .env`);
 const webhookClient = new WebhookClient({ url: url });
+if(!webhookClient) return;
 const colors = require(`colors/safe`)
 const client = require(`..`)
 process.on('unhandledRejection', (reason, promise) => {
